@@ -1,0 +1,31 @@
+#header {
+  background-image: url('../../assets/header.png');
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* background-size: cover;
+  background-position: center; */
+}
+
+#header-content {
+  font-family: "Dancing Script", cursive;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.countdown-element {
+  text-align: center;
+  font-size: 1rem;
+  margin: 10px;
+}
+
+.countdown-element span {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
