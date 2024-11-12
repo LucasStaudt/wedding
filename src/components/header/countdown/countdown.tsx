@@ -1,12 +1,12 @@
 import React from 'react';
-import Countdown, { zeroPad } from 'react-countdown';
+import Countdown, { zeroPad, CountdownRenderProps } from 'react-countdown';
 
 interface CountdownProps {
   targetDate: string;
 }
 
 const CountdownComponent: React.FC<CountdownProps> = ({ targetDate }) => {
-  const renderer = ({ days, hours, minutes, seconds, completed }: any) => {
+  const renderer = ({ days, hours, minutes, seconds, completed }: CountdownRenderProps) => {
     if (completed) {
       return <h2>Time's up!</h2>;
     } else {

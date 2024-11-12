@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import "./styles.css";
-import { Button, Typography, IconButton } from "@material-tailwind/react";
+import { Button, IconButton } from "@material-tailwind/react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { pages } from "../../helpers/linksHelper";
 
@@ -13,9 +13,9 @@ function NavItem({ url, link_name }: NavLinksProps) {
   return (
     <li>
       <a href={url}>
-        <Typography className="flex items-center gap-2 font-medium">
+        <p className="flex items-center gap-2 font-medium">
           {link_name}
-        </Typography>
+        </p>
       </a>
     </li>
   );
@@ -43,13 +43,12 @@ const Navbar: React.FC = () => {
       } transition-all`}
     >
       <div className="container mx-auto flex items-center justify-between py-4 px-4 lg:px-8">
-        <Typography
-          as="a"
+        <a
           href="/"
           className="text-lg font-bold text-white font-dancing-script"
         >
           Anne & Lucas
-        </Typography>
+        </a>
         
         <ul
           className={`hidden lg:flex items-center gap-6 ${
