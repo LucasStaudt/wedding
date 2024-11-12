@@ -38,7 +38,7 @@ const Navbar: React.FC = () => {
 
   return (
     <div
-      className={`fixed top-0 z-50 w-full ${
+      className={`fixed top-0 z-50 w-full text-white ${
         isScrolling ? "bg-gray-800" : "bg-transparent"
       } transition-all`}
     >
@@ -53,7 +53,7 @@ const Navbar: React.FC = () => {
         
         <ul
           className={`hidden lg:flex items-center gap-6 ${
-            isScrolling ? "text-gray-900" : "text-white"
+            isScrolling ? "text-white-500" : "text-white"
           }`}
         >
           {pages.map(({ id, page, href }) => (
@@ -75,7 +75,7 @@ const Navbar: React.FC = () => {
           {isOpen ? (
             <FaTimes className="h-5 w-5" />
           ) : (
-            <FaBars className="h-5 w-5" />
+            <FaBars className="h-5 w-5 relative" />
           )}
         </IconButton>
       </div>

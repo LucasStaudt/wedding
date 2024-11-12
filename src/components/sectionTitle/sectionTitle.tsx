@@ -1,4 +1,5 @@
 import React from 'react';
+import "./styles.css";
 
 interface SectionTitleProps {
   sectionTitle: string;
@@ -6,9 +7,11 @@ interface SectionTitleProps {
 
 const SectionTitle: React.FC<SectionTitleProps> = ({ sectionTitle }) => {
   return (
-    <h2 className="text-center text-2xl font-semibold mb-4 border-b-4 border-blue-500 pb-2">
-      {sectionTitle}
-    </h2>
+    <div>
+      <h1 className="">
+        {sectionTitle}
+      </h1>
+    </div>
   );
 };
 
