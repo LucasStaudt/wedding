@@ -61,7 +61,7 @@ const Navbar: React.FC = () => {
         </ul>
 
         <div className="hidden items-center gap-2 lg:flex">
-          <Button variant="text" color="white">
+          <Button variant="text" color="white" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
             Responder
           </Button>
         </div>
@@ -70,6 +70,10 @@ const Navbar: React.FC = () => {
           variant="text"
           onClick={handleToggle}
           className="ml-auto inline-block lg:hidden text-white"
+          title="Toggle menu"
+          placeholder=""
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}}
         >
           {isOpen ? (
             <FaTimes className="h-5 w-5" />
@@ -88,9 +92,9 @@ const Navbar: React.FC = () => {
             ))}
           </ul>
           <div className="mt-4 flex justify-center">
-            <Button variant="text" color="white">
-              Responder
-            </Button>
+          <Button variant="text" color="white" placeholder="responder" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
+            Responder
+          </Button>
           </div>
         </div>
       )}

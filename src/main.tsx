@@ -6,8 +6,8 @@ import './index.css'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter>
-    <Home />
+    <BrowserRouter basename={"https://lucasstaudt.github.io/wedding/"}>
+      <Home />
     </BrowserRouter>
   </StrictMode>,
 )

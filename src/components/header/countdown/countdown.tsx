@@ -10,7 +10,6 @@ const CountdownComponent: React.FC<CountdownProps> = ({ targetDate }) => {
     if (completed) {
       return <h2>Time's up!</h2>;
     } else {
-      // Render countdown
       return (
         <div className="countdown">
           <div className="countdown-element">
