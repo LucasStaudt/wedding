@@ -39,7 +39,7 @@ const Navbar: React.FC = () => {
   return (
     <div
       className={`fixed top-0 z-50 w-full text-white ${
-        isScrolling ? "bg-gray-800" : "bg-transparent"
+        isScrolling ? "bg-gray-900" : "bg-transparent"
       } transition-all`}
     >
       <div className="container mx-auto flex items-center justify-between py-4 px-4 lg:px-8">

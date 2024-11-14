@@ -13,7 +13,7 @@ export function StorySection() {
           que nos poderíamos nos encontrar então se não foi o destino não sei o
           que foi.
         </p>
-        <p className=" !text-gray-500">
+        <p className="indent-6 font-normal !text-gray-500">
           Desde o primeiro encontro, sabíamos que havia algo especial
           entre nós e não nos desgrudamos desde então cada dia sendo uma nova
           experiência. Ao longo desses anos, enfrentamos desafios e comemoramos
