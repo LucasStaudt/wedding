@@ -1,5 +1,5 @@
 import React from 'react';
-import "./styles.css";
+import './styles.css';
 
 interface SectionTitleProps {
   sectionTitle: string;
@@ -7,7 +7,7 @@ interface SectionTitleProps {
 
 const SectionTitle: React.FC<SectionTitleProps> = ({ sectionTitle }) => {
   return (
-    <h1 className="mb-8">
+    <h1 className="relative mb-8 text-gray-800 dark:text-gray-200 text-4xl font-semibold text-center">
       {sectionTitle}
     </h1>
   );

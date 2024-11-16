@@ -52,13 +52,12 @@ table {
 
 /* custom */
 .outlined {
-  outline: 1px solid #fff;
+  outline: 3px solid #fff;
   outline-offset: -10px;
 }
 
 body {
-  background-color: #EBE2D3;
-  color: #4B2E18;
+  color: #fffaf0;
 }
 
 .font-dancing-script {

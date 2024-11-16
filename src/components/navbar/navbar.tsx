@@ -11,7 +11,7 @@ interface NavLinksProps {
 
 function NavItem({ url, link_name }: NavLinksProps) {
   return (
-    <li>
+    <li className="menu1">
       <a href={url}>
         <p className="flex items-center gap-2 font-medium">
           {link_name}
@@ -83,7 +83,6 @@ const Navbar: React.FC = () => {
         </IconButton>
       </div>
 
-      {/* Mobile menu */}
       {isOpen && (
         <div className="lg:hidden bg-gray-800 py-4 px-6 border-t border-gray-200">
           <ul className="flex flex-col items-center gap-4">

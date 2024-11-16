@@ -4,8 +4,9 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 import local1 from "../../assets/local1.png";
 import local2 from "../../assets/local2.png";
 import local3 from "../../assets/local3.png";
+import local4 from "../../assets/local4.png";
 
-const images = [local1, local2, local3];
+const images = [local1, local2, local3, local4];
 
 const Location: React.FC = () => {
   return (

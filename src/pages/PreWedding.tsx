@@ -1,17 +1,22 @@
 import Navbar from "../components/navbar/navbar";
-import Header from "../components/header/header";
-import StorySection from "../sections/storySection/story";
-import MapSection from "../sections/localSection/map";
 
-function App() {
+function PreWedding() {
   return (
     <>
       <Navbar />
-      <Header />
-      <StorySection />
-      <MapSection />
+      <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-blue-300 to-blue-800 text-white">
+        <div className="relative text-center p-8 bg-white bg-opacity-20 rounded-lg shadow-lg max-w-md">
+          <div className="flex justify-center mb-6">
+            <div className="w-24 h-24 border-8 border-t-8 border-blue-300 border-solid rounded-full animate-spin"></div>
+          </div>
+
+          <h1 className="text-3xl font-semibold mb-4 text-white">Ainda não tiramos as fotos</h1>
+          <p className="text-lg mb-6 text-white">Mas fique ligado para novidades.</p>
+          
+        </div>
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default PreWedding;
