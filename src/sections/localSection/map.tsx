@@ -5,7 +5,7 @@ import SectionTitle from '../../components/sectionTitle/sectionTitle';
 const MapSection: React.FC = () => {
   return (
     <section className="map-section my-8 relative">
-      <SectionTitle sectionTitle="Local do casamento" />
+      <SectionTitle sectionTitle="Cerimônia" subTitle="Local do casamento" />
 
       <div className="map-container border-2 border-gray-300 rounded-lg overflow-hidden">
         <Location />

@@ -5,7 +5,7 @@ export function StorySection() {
   return (
     <section id="story-section" className="container flex flex-col md:flex-row gap-20 py-12 px-8">
       <div className="mx-auto max-w-screen-md">
-        <SectionTitle sectionTitle="Nossa História" />
+        <SectionTitle  subTitle="Nossa História" sectionTitle="Trajetória" />
 
         <p className="indent-6 font-normal !text-gray-500">
           Há cinco anos, nossas vidas se cruzaram de uma maneira que só o
