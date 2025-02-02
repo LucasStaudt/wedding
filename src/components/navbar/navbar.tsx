@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./styles.css";
 import { Button, IconButton } from "@material-tailwind/react";
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -12,11 +13,9 @@ interface NavLinksProps {
 function NavItem({ url, link_name }: NavLinksProps) {
   return (
     <li className="menu1">
-      <a href={url}>
-        <p className="flex items-center gap-2 font-medium">
-          {link_name}
-        </p>
-      </a>
+      <Link to={url} className="flex items-center gap-2 font-medium">
+        {link_name}
+      </Link>
     </li>
   );
 }
@@ -25,7 +24,6 @@ const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolling, setIsScrolling] = useState(false);
 
-  // Handle scroll state change
   useEffect(() => {
     const handleScroll = () => setIsScrolling(window.scrollY > 0);
     window.addEventListener("scroll", handleScroll);
@@ -43,43 +41,30 @@ const Navbar: React.FC = () => {
       } transition-all`}
     >
       <div className="container mx-auto flex items-center justify-between py-4 px-4 lg:px-8">
-        <a
-          href="/"
-          className="text-lg font-bold text-white font-dancing-script"
-        >
+        <Link to="/" className="text-lg font-bold text-white font-dancing-script">
           Anne & Lucas
-        </a>
+        </Link>
         
-        <ul
-          className={`hidden lg:flex items-center gap-6 ${
-            isScrolling ? "text-white-500" : "text-white"
-          }`}
-        >
+        <ul className="hidden lg:flex items-center gap-6">
           {pages.map(({ id, page, href }) => (
             <NavItem key={id} url={href} link_name={page} />
           ))}
         </ul>
 
-        <div className="hidden items-center gap-2 lg:flex">
-          <Button variant="text" color="white" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
+        <div className="hidden lg:flex items-center gap-2">
+          <Button variant="text" color="white" placeholder="">
             Responder
           </Button>
         </div>
-        
+
         <IconButton
           variant="text"
           onClick={handleToggle}
           className="ml-auto inline-block lg:hidden text-white"
           title="Toggle menu"
           placeholder=""
-          onPointerEnterCapture={() => {}}
-          onPointerLeaveCapture={() => {}}
         >
-          {isOpen ? (
-            <FaTimes className="h-5 w-5" />
-          ) : (
-            <FaBars className="h-5 w-5 relative" />
-          )}
+          {isOpen ? <FaTimes className="h-5 w-5" /> : <FaBars className="h-5 w-5 relative" />}
         </IconButton>
       </div>
 
@@ -91,9 +76,9 @@ const Navbar: React.FC = () => {
             ))}
           </ul>
           <div className="mt-4 flex justify-center">
-          <Button variant="text" color="white" placeholder="responder" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
-            Responder
-          </Button>
+            <Button variant="text" color="white" placeholder="">
+              Responder
+            </Button>
           </div>
         </div>
       )}

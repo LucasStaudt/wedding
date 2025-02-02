@@ -1,12 +1,10 @@
-import Navbar from "../components/navbar/navbar";
 import Header from "../components/header/header";
 import StorySection from "../sections/storySection/story";
 import MapSection from "../sections/localSection/map";
 
-function App() {
+function Home() {
   return (
     <>
-      <Navbar />
       <Header />
       <StorySection />
       <MapSection />
@@ -14,4 +12,4 @@ function App() {
   )
 }
 
-export default App
+export default Home

@@ -1,6 +1,5 @@
 import React from "react";
 import upIcon from "../../assets/up.png";
-// how to import icon from /assets/up.png
 
 interface SectionTitleProps {
   sectionTitle: string;
