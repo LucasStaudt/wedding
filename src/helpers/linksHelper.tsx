@@ -9,3 +9,11 @@ export const pages = [
 export const socialLinks = [
   { id: 1, Icon: <FaInstagram />, href: "/" },
 ];
+
+export const gifts = [
+  { id: 1, name: "Jantar Romântico", amount: "R$ 200" },
+  { id: 2, name: "Noite em Hotel", amount: "R$ 500" },
+  { id: 3, name: "Passeio de Barco", amount: "R$ 350" },
+  { id: 4, name: "Contribuição Livre", amount: "Qualquer valor" },
+];
+
